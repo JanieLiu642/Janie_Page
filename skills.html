@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Janie's Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="title">
+        <img src="Janie_Page_Logo@2x.png" alt="Janie Logo" width="220px"/>
+        <div class="socials">
+            <a href=""><img src="social_1.jpg" alt="Facebook" width="55px"/></a>
+            <a href=""><img src="social_2.jpg" alt="Instagram" width="55px"/></a>
+            <a href=""><img src="social_3.jpg" alt="Youtube" width="55px"/></a>
+            <a href=""><img src="social_4.jpg" alt="Twitter" width="55px"/></a>
+        </div>
+        <div class="link">
+            <a href="index.html">About Me</a>
+            <span>My Skills</span>
+        </div>
+    <div class="skills">
+        <div class="fold">
+            <button class="accordion">Technical Skills</button>
+            <div class="panel">
+            <ul>
+                <li>
+                    <div class="card">
+                    <h1 style="text-align:center;">UX PROCESS</h1>
+                    <img src="skills_icon_01.svg" alt="UX PROCESS" style="text-align:center;" width="400px">
+                    <p>Understand user experience process and principles, from personas, prototyping, to usability testing</p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <h1 style="text-align:center;">RAPID PROTOTYPING</h1>
+                        <img src="skills_icon_02.svg" alt="RAPID PROTOTYPING" style="text-align:center;" width="400px">
+                        <p>Proficient in using user experience prototyping tools to create interactive prototypes to facilitate collaboration</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </li>
+                <li>
+                    <div class="card">
+                        <h1 style="text-align:center;">GRAPHIC DESIGN</h1>
+                        <img src="skills_icon_03.svg" alt="GRAPHIC DESIGN" style="text-align:center;" width="400px">
+                        <p>Proficient in creating graphical elements to ensure effective visual communication for user interfaces</p>
+                        <button type="button" class="btn btn-primary">Learn More</button>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="fold">
+            <button class="accordion">Soft Skills</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <h1 style="text-align:center;">PROBLEM SOLVING</h1>
+                            <img src="skills_icon_05.svg" alt="PROBLEM SOLVING" style="text-align:center;" width="400px">
+                            <p>Active to research and analyze the root cause of a problem. Active to brainstorm and envision possible solutions</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <h1 style="text-align:center;">CURIOSITY</h1>
+                            <img src="skills_icon_06.svg" alt="CURIOSITY" style="text-align:center;" width="400px">
+                            <p>Curious to learn from a cross-functional team. Feel enlightened when connecting known with unknown</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <h1 style="text-align:center;">COMMUNICATION</h1>
+                            <img src="skills_icon_07.svg" alt="COMMUNICATION" style="text-align:center;" width="400px">
+                            <p>Open-minded to listen and adjust the course of plan. Able to effectively convey key information based on professionalism and respect
+                            </p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="fold">
+            <button class="accordion">Areas for Improvement</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <div class="card">
+                            <h1 style="text-align:center;">FRONT-END CODING</h1>
+                            <img src="skills_icon_09.svg" alt="FRONT-END CODING" style="text-align:center;" width="400px">
+                            <p>Interested in utilizing front-end coding to realize functional interfaces</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="card">
+                            <h1 style="text-align:center;">WEB ANALYTICS</h1>
+                            <img src="skills_icon_04.svg" alt="WEB ANALYTICS" style="text-align:center;" width="400px">
+                            <p>Interested in utilizing Web analytics to drive design decisions</p>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active_1");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</html>
